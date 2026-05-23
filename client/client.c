@@ -9,7 +9,10 @@
 int main() {
     int sock = 0;
     struct sockaddr_in serv_addr;
-    char *message = "Hello from client";
+    char message[100];
+
+printf("Введите команду (например: add 5 7): ");
+fgets(message, sizeof(message), stdin);
     char buffer[1024] = {0};
 
     // создаём сокет
