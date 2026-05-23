@@ -3,3 +3,9 @@
 *.log
 build/
 *.deb
+*.swp
+*.swo
+*.save
+
+server/server
+client/client
